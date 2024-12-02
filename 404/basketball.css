@@ -1,0 +1,65 @@
+body { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+    background-color: #405061; 
+  } 
+   
+  .button { 
+    margin-right: 980px; 
+    padding: 10px 20px; 
+    font-size: 15px; 
+    background-color: #f78432; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  } 
+   
+  .container { 
+    display: flex; 
+    margin-bottom: 20px; 
+  } 
+   
+  .card { 
+    border: 1px solid black; 
+    display: flex; 
+  } 
+   
+  .photo { 
+    width: 400px; 
+    height: 320px; 
+    border-right: 1px solid black; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  } 
+   
+  .info { 
+    padding: 10px; 
+    width: 550px; 
+    height: 300px; 
+  } 
+   
+  .info h3 { 
+    margin-top: 0; 
+    border-bottom: 1px solid black; 
+    width: 560px 
+  } 
+   
+  .controls { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+  } 
+   
+  .reviews { 
+    width: 800px; 
+    height: 250px; 
+    background-color: lightgray; 
+    display: flex; 
+    justify-content: center; 
+    border: 1px solid black; 
+  }

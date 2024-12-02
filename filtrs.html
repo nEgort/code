@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="filtrs.css">
+</head>
+
+<body>
+  <div class="logo">
+    <img src="pic\logo.jpg"alt="Логотип">
+  </div>
+  <hr color=orange>
+  <h1 class="h1">Местоположение</h1>
+  <br>
+  <form action="search" method="get">
+    <input type="text" name="query" placeholder="Введите адрес">
+  </form>
+  <div class="tip platforms">
+    <h1 class="text1">Тип площадки</h1>
+    <div class="tips">
+      <label for="футбол">
+        <input type="radio" id="футбол" name="спорт">Футбол
+      </label>
+      <label for="баскетбол">
+        <input type="radio" id="баскетбол" name="спорт">Баскетбол
+      </label>
+      <label for="волейбол">
+        <input type="radio" id="волейбол" name="спорт">Волейбол
+      </label>
+    </div>
+  </div>
+  <div class="tip platforms">
+    <h1 class="text2">Доступ площадки</h1>
+    <div class="dostup">
+      <label for="бесплатный">
+        <input type="radio" id="бесплатный" name="доступ">Бесплатная
+      </label>
+      <label for="платный">
+        <input type="radio" id="платный" name="доступ">Платная
+      </label>
+    </div>
+  </div>
+  <div class="tip platforms">
+    <h1 class="text3">Дополнительные функции</h1>
+    <div class="fynction">
+      <label for="Освещение">
+        <input type="checkbox" name="функции[]" id="освещение">
+        <label for="освещение">Освещение</label>
+      </label>
+      <label for="раздевалка">
+        <input type="checkbox" name="функции[]" id="раздевалка">
+        <label for="раздевалка">Раздевалка</label>
+      </label>
+      <label for="наличия инвентаря">
+        <input type="checkbox" name="функции[]" id="инвентарь">
+        <label for="инвентарь">Наличие инвентаря</label>
+      </label>
+    </div>
+  </div>
+  <div class="search">
+    <button id="поиск">Поиск</button>
+  </div>
+  <script>
+    const футболRadio = document.getElementById("футбол");
+    const баскетболRadio = document.getElementById("баскетбол");
+    const волейболRadio = document.getElementById("волейбол");
+    const бесплатныйRadio = document.getElementById("бесплатный");
+    const платныйRadio = document.getElementById("платный");
+    const поискButton = document.getElementById("поиск");
+
+    let выбранныйСпорт = null;
+    let доступ = null;
+
+    футболRadio.addEventListener("click", () => {
+      выбранныйСпорт = "футбол";
+    });
+
+    баскетболRadio.addEventListener("click", () => {
+      выбранныйСпорт = "баскетбол";
+    });
+
+    волейболRadio.addEventListener("click", () => {
+      выбранныйСпорт = "волейбол";
+    });
+
+    бесплатныйRadio.addEventListener("click", () => {
+      доступ = "бесплатный";
+    });
+
+    платныйRadio.addEventListener("click", () => {
+      доступ = "платный";
+    });
+
+    поискButton.addEventListener("click", () => {
+      if (выбранныйСпорт === "футбол" && доступ === "бесплатный") {
+        window.location.href = "freefootball.html";
+      }
+      else if (выбранныйСпорт === "футбол" && доступ === "платный") {
+        window.location.href = "paidfootball.html";
+      }
+      else if (выбранныйСпорт === "баскетбол" && доступ === "бесплатный") {
+        window.location.href = "freebasketball.html";
+      }
+      else if (выбранныйСпорт === "баскетбол" && доступ === "платный") {
+        window.location.href = "paidbasketball.html";
+      }
+      else if (выбранныйСпорт === "волейбол" && доступ === "бесплатный") {
+        window.location.href = "freevolleyball.html";
+      }
+      else if (выбранныйСпорт === "волейбол" && доступ === "платный") {
+        window.location.href = "paidvolleyball.html";
+      }
+      else {
+        alert("Сначала выберите спорт и тип доступа!");
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="paid_styles.css">
+</head>
+<body>
+    <div class="large-button">
+        <a href="paidfootball.html">
+        <input type="submit" value="Назад">
+        </a>
+    </div>
+    <div class="logo">
+        <img src="pic\logo.jpg"alt="Логотип">
+      </div>
+    <hr color=orange>
+        <div class="platforms">
+            <img src="pic\pf.jpg" alt="Фото футбольной площадки">
+        </div>
+        <div class="description">
+            <h3>
+                Описание:Вроде норм площадка и можно играть
+            </h3>
+        </div>
+        <div class="adress"> 
+            <h3>Адрес:Тихорецкий бул.,вл1,Москва</h3>
+        </div>
+        <div class="price">
+            <h2><span class="slovoprice">Цена</span></h2>
+            <label class="кнопка">
+                <button id="showPrice">></button>
+            </label>
+            <div id="priceFrame" class="price-frame">
+                <p>Цена площадки:
+                    <br>
+                    <span  id="priceNumber">от 5800 руб/ч</span>
+                </p>
+            </div>
+        </div>
+        <div class="phone">
+            <h2><span class="slovophone">Номер владельца площадки</span></h2>
+            <label class="кнопка">
+                <button id="showPhone">></button>
+            </label>
+            <div id="phoneFrame2" class="phone-frame">
+                <p>Номер телефона:
+                    <br>
+                    <span  id="phoneNumber">+7 (929) 555-11-88</span>
+                </p>
+            </div>
+        </div>
+        <div class="time">
+            <h2><span class="slovotime">Время работы площадки</span></h2>
+            <label class="кнопка">
+                <button id="showtime">></button>
+            </label>
+            <div id="timeFrame3" class="time-frame">
+                <p>График работы:
+                    <br>
+                    <span  id="timeNumber">
+                        Понедельник: 24 часа
+                        <br>
+                        Вторник: 24 часа
+                        <br>
+                        Среда: 24 часа
+                        <br>
+                        Четверг: 24 часа
+                        <br>
+                        Пятница: 24 часа
+                        <br>
+                        Суббота: 24 часа
+                        <br>
+                        Воскресенье: 24 часа
+                    </span>
+                </p>
+            </div>
+        </div>
+        
+        <script>
+            //Price Script
+            const priceButton = document.getElementById("showPrice");
+            const priceFrame = document.getElementById("priceFrame");
+            
+            priceButton.addEventListener("click", () => {
+              if (priceFrame.style.display === "none" || priceFrame.style.display === "") {
+                priceFrame.style.display = "block";
+              } else {
+                priceFrame.style.display = "none";
+              }
+            });
+            
+            
+            //Phone Script
+            const phoneButton = document.getElementById("showPhone");
+            const phoneFrame = document.getElementById("phoneFrame2"); // Corrected ID
+            
+            phoneButton.addEventListener("click", () => {
+              if (phoneFrame.style.display === "none" || phoneFrame.style.display === "") {
+                phoneFrame.style.display = "block";
+              } else {
+                phoneFrame.style.display = "none";
+              }
+            });
+
+            //Time Script
+            const timeButton = document.getElementById("showtime");
+            const timeFrame = document.getElementById("timeFrame3"); // Corrected ID
+            
+            timeButton.addEventListener("click", () => {
+              if (timeFrame.style.display === "none" || timeFrame.style.display === "") {
+                timeFrame.style.display = "block";
+              } else {
+                timeFrame.style.display = "none";
+              }
+            });
+            </script>
+        <div class="otziv">
+            <h2><span class="clovaotziv">Отзывы</span></h2>
+                <form action="/search" method="get">
+                    <input type="text" name="query" placeholder="Оставить комментарий">
+                    <button type="submit">Отправить</button>
+                </form>
+        </div>
+</body>
+</html>
