@@ -89,23 +89,21 @@ a.text {
     position: relative;
     left:400px;
 }
+
 form input[type="text"] { 
-    width: 80%; 
-    height: 40px; 
-    padding: 10px; 
-    box-sizing: border-box; 
-    position: relative;
-    top:250px;
-    border-radius: 30px;
-  }
+  width: 80%; 
+  height: 40px; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  position: relative;
+  top:250px;
+}
 form button[type="submit"]{
     width: 20%; 
     height: 40px;
     position: relative;
     top:210px;
     left:720px;
-    border-radius: 30px;
-    
 }
 
 .кнопка button {
@@ -117,18 +115,18 @@ form button[type="submit"]{
   border: none; /* Удаляем стандартную рамку кнопки */
   cursor: pointer; /* Устанавливаем курсор "указатель" при наведении */
   position: relative;
-  left:85px;
+  left:130px;
   top:-30px;
 }
 .price{
   border:5px solid rgb(221, 173, 69); 
   border-radius: 10px;
   background-color:rgb(221, 173, 69) ;
-  width:10%;
+  width:12%;
   height:5%;
   position:relative;
   top:-400px;
-  left:300px;
+  left:325px;
   display: inline-block;
 }
 .slovoprice{
@@ -171,7 +169,7 @@ height:50px;
   border:5px solid rgb(221, 173, 69); 
   border-radius: 10px;
   background-color:rgb(221, 173, 69) ;
-  width:10%;
+  width:12%;
   height:5%;
   position:relative;
   top:-220px;
@@ -182,7 +180,7 @@ height:50px;
 
 .slovotime{
   position: relative;
-  left:20px;
+  left:10px;
   top:15px;
 }
 .time-frame {
@@ -202,11 +200,11 @@ height:50px;
   border:5px solid rgb(221, 173, 69); 
   border-radius: 10px;
   background-color:rgb(221, 173, 69) ;
-  width:10%;
+  width:12%;
   height:5%;
   position:relative;
   top:-50px;
-  left:-30px;
+  left:-60px;
   display: inline-block;
 
 }
