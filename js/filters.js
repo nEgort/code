@@ -30,11 +30,11 @@ let доступ = null;
 
 поискButton.addEventListener("click", () => {
   if (выбранныйСпорт === "футбол" && доступ === "бесплатный") {
-    window.location.href = "freefootball.html";
+    window.location.href = "f.html";
   } else if (выбранныйСпорт === "футбол" && доступ === "платный") {
     window.location.href = "paidfootball.html";
   } else if (выбранныйСпорт === "баскетбол" && доступ === "бесплатный") {
-    window.location.href = "freebasketball.html";
+    window.location.href = "b.html";
   } else if (выбранныйСпорт === "баскетбол" && доступ === "платный") {
     window.location.href = "paidbasketball.html";
   } else if (выбранныйСпорт === "волейбол" && доступ === "бесплатный") {

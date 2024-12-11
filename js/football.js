@@ -1,5 +1,4 @@
-let data = [];
-fetch('basketball.json')
+fetch('js/football.json')
     .then(response => {
 
         if (!response.ok) {
@@ -45,4 +44,3 @@ function createCard(item) {
 
     return card;
 }
-

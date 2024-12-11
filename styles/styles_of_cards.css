@@ -3,6 +3,41 @@
   flex-direction: column;
   gap: 70px;
 }
+.logo{
+  width:1050px;
+  height:125px;
+  position: relative;
+  top:15px;
+  left:10px;
+}
+.logop{
+  position: absolute;
+  top:-15px;
+  left: 20px;
+  width: 490px;
+  height: 125px;
+  border: 0px solid white;
+   border-radius: 0px;
+}
+.search-container{
+  background-color:orange;
+  border:2px solid black;
+  height:90px;
+  width:400px;
+  text-align: center;
+  margin:auto;
+  margin-bottom: 0px;
+}
+.button {
+  position: relative;
+  left:300px; 
+  background: orange;
+}
+.poblizosti{
+  position: relative;
+  top:15px;
+  left: 300px;
+}
 .card{
     width: 900px;
     height: 380px;

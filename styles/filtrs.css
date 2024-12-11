@@ -38,17 +38,17 @@ hr
 .dostup{
     position: relative;
     top:70px;
-    left:580px;
+    left:600px;
 }
 .tip platforms{
     position: relative;
     top:90px;
-    left:580px;
+    left:590px;
 }
 .text1 {
     position: relative;
     top:40px;
-    left:580px;
+    left:600px;
 }
 .text2{
     position: relative;
@@ -58,12 +58,12 @@ hr
 .text3{
     position: relative;
     top:70px;
-    left:580px; 
+    left:530px; 
 }
 .fynction{
     position: relative;
     top:70px;
-    left:580px; 
+    left:530px; 
 }
 .search{
     position: relative;
@@ -85,7 +85,7 @@ form input[type="text"] {
     box-sizing: border-box;
     border-radius:15px;
     position: relative;
-    left:580px;
+    left:590px;
     top:30px;
 }
 
