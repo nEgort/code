@@ -32,7 +32,7 @@ let доступ = null;
   if (выбранныйСпорт === "футбол" && доступ === "бесплатный") {
     window.location.href = "f.html";
   } else if (выбранныйСпорт === "футбол" && доступ === "платный") {
-    window.location.href = "paidfootball.html";
+    window.location.href = "pf.html";
   } else if (выбранныйСпорт === "баскетбол" && доступ === "бесплатный") {
     window.location.href = "b.html";
   } else if (выбранныйСпорт === "баскетбол" && доступ === "платный") {
