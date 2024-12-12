@@ -38,7 +38,7 @@ let доступ = null;
   } else if (выбранныйСпорт === "баскетбол" && доступ === "платный") {
     window.location.href = "paidbasketball.html";
   } else if (выбранныйСпорт === "волейбол" && доступ === "бесплатный") {
-    window.location.href = "freevolleyball.html";
+    window.location.href = "v.html";
   } else if (выбранныйСпорт === "волейбол" && доступ === "платный") {
     window.location.href = "paidvolleyball.html";
   } else {
