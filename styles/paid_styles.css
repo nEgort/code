@@ -75,10 +75,19 @@ h3{
 }
 .logo{
   width:1050px;
-  height:250px;
+  height:125px;
   position: relative;
-  top:-20px;
-  left:0px;
+  top:15px;
+  left:10px;
+}
+.logop{
+  position: absolute;
+  top:-15px;
+  left: 20px;
+  width: 490px;
+  height: 125px;
+  border: 0px solid white;
+   border-radius: 0px;
 }
 a.text:active, 
 a.text:hover,  
