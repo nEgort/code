@@ -1,5 +1,6 @@
 let data = [];
 fetch('json/marinofb.json')
+
     .then(response => {
 
         if (!response.ok) {

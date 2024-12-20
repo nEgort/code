@@ -1,37 +1,69 @@
-.container{
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
+body{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 400;
+  margin: 0; /* Убираем стандартные отступы */
+  padding: 0; /* Убираем стандартные поля */
+  overflow-x: hidden;
+}
+.background{
+  background-color: #e6d9af;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed; /* Фиксирует фон на месте при прокрутке */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.container1{
+  z-index: 1;
 }
 .logo{
-  width:1050px;
-  height:125px;
-  position: relative;
-  top:15px;
-  left:10px;
+  width:20%;
+  height:30%; 
+  position:relative;
+  left:40px;
+  top:10px;
 }
 .logop{
-  position: absolute;
-  top:-15px;
-  left: 20px;
-  width: 490px;
-  height: 125px;
+  position: relative;
+  top:0px;
+  left: 0px;
+  width: 100%;
+  height: 110%;
   border: 0px solid white;
-   border-radius: 0px;
+  border-radius: 0px;
 }
-.search-container{
-  background-color:orange;
-  border:2px solid black;
-  height:90px;
-  width:400px;
+.resultat{
+  position: relative;
+  border:1px solid #FF740F;
+  border-radius: 10px;
+  width:480px;
+  height:150px;
+  background-color: #FF740F;
+  left:550px;
   text-align: center;
-  margin:auto;
-  margin-bottom: 0px;
+  font-size: 1.5em;
+}
+
+.search-container{
+  color:#F0F0F0
 }
 .button {
   position: relative;
   left:300px; 
-  background: orange;
+  background: #FF740F;
+  width:100px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.nazad{
+  color:#F0F0F0;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 400;
+
 }
 .poblizosti{
   position: relative;
@@ -46,7 +78,10 @@
     position: relative;
     top:50px;
     left:300px;
-    background-color: bisque;
+    background-color: #ff832a;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+
   }
  img{
    position: absolute;
@@ -64,8 +99,10 @@
    border-radius: 10px;
    position: relative;
    left:470px;
-   background-color: azure;
+   background-color: #F0F0F0;
    text-align: center;
+   
+   
   }
  h3{
    width: 400px;
@@ -74,8 +111,11 @@
    border-radius: 10px;
    position: relative;
    left:470px;
-   background-color: azure;
+   background-color: #F0F0F0;
    text-align: center;
+   
+   
+   
   }
  h4{
    width: 400px;
@@ -84,6 +124,7 @@
    border-radius: 10px;
    position: relative;
    left:470px;
-   background-color: azure;
+   background-color: #F0F0F0;
    text-align: center;
+
 }

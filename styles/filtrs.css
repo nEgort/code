@@ -1,9 +1,50 @@
-.logo{
-    width:500px;
-    height:50px;
-    position:relative;
-    left:30px;
+body{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin: 0; /* Убираем стандартные отступы */
+    padding: 0; /* Убираем стандартные поля */
+    overflow-x: hidden;
 }
+.background{
+    background-image: url('/pic/websites/fon1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed; /* Фиксирует фон на месте при прокрутке */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.container{
+    z-index: 1;
+}
+.logo{
+    position:relative;
+    left:40px;
+    top:10px;      
+}
+.logo img {
+    width:20%;
+    height:30%;       
+}
+.container {
+    position: relative; /* Делаем контейнер относительным */
+    
+  }
+.filters {
+    border: 2px solid black;
+    border-radius: 550px;
+    background-color: white;
+    position: absolute; /* Делаем filters абсолютным, чтобы он двигался, а его внутренние элементы оставались на месте */
+    left:400px;
+    top:30px;
+    width:780px;
+    height: 650px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
 .place{
     margin-bottom: 10px;
     position:relative;
@@ -15,7 +56,8 @@
 h1{
     position:relative;
     top:50px;
-    left:580px;
+    left:250px;
+    
 }
 hr
 {
@@ -24,9 +66,8 @@ hr
     }
 .tips{
     position: relative;
-    top:50px;
-    left:580px;
-    
+    top:40px;
+    left:230px;
 }
 
 .text{
@@ -37,8 +78,8 @@ hr
 }
 .dostup{
     position: relative;
-    top:70px;
-    left:600px;
+    top:50px;
+    left:270px;
 }
 .tip platforms{
     position: relative;
@@ -47,23 +88,23 @@ hr
 }
 .text1 {
     position: relative;
-    top:40px;
-    left:600px;
+    top: 40px;
+    left:265px;
 }
 .text2{
     position: relative;
-    top:70px;
-    left:580px;
+    top:50px;
+    left:250px;
 }
 .text3{
     position: relative;
-    top:70px;
-    left:530px; 
+    top:50px;
+    left:180px; 
 }
 .fynction{
     position: relative;
-    top:70px;
-    left:530px; 
+    top:60px;
+    left:180px; 
 }
 .search{
     position: relative;
@@ -79,16 +120,27 @@ a.text {
 }
 
 form input[type="text"] {
-    width: 15%;
+    width: 40%;
     height:2%;
     padding:10px;
     box-sizing: border-box;
-    border-radius:15px;
+    border-radius:20px;
     position: relative;
-    left:590px;
+    left:220px;
     top:30px;
 }
 
 .button {
-    background: orange;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 17%;
+    padding: 7px 10px; /* Отступы сверху/снизу 10px, слева/справа 20px */
+    position: relative;
+    top: -15px;
+    left: -365px;
+    display: inline-block;
 }
+.text4{
+    color: white;
+}
+
