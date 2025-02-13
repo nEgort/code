@@ -5,7 +5,7 @@ const basketballRadio = document.getElementById("баскетбол");
 const volleyballRadio = document.getElementById("волейбол");
 const freeRadio = document.getElementById("бесплатный");
 const payedRadio = document.getElementById("платный");
-const поискButton = document.getElementById("поиск");
+const findButton = document.getElementById("поиск");
 
 let chsport = null; 
 let access = null;     
@@ -18,7 +18,7 @@ freeRadio.addEventListener("change", () => { access = "бесплатный"; })
 payedRadio.addEventListener("change", () => { access = "платный"; });
 
 
-поискButton.addEventListener("click", () => {
+findButton.addEventListener("click", () => {
   const query = queryInput.value.toLowerCase(); 
   if (chsport && access) { 
     let targetPage = null; 
